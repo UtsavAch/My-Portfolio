@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Utsav Acharya</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- ******************************** -->
+    <!-- ---------NAVIGATION SECTION---------- -->
+    <!-- ******************************** -->
+
+    <section class="navbar__section" id="navbar-section">
+      <div class="navbar__container">
+        <a class="link navbar__link navbar__logo" href="#navbar-section"
+          >U<span class="letter__t">t</span>sav</a
+        >
+        <ul class="navbar__list">
+          <li class="navbar__list-item">
+            <a class="link navbar__link" href="#slider-section">skills</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="link navbar__link" href="#project-section">projects</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="link navbar__link" href="#contact-section">contact</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="link navbar__link" href="#about-section">about</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="link navbar__link navbar__link-cv" href="#" download
+              >C.V. <i class="navbar__link-cv-icon uil uil-download-alt"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="navbar__button">
+          <i class="navbar__button-bar uil uil-bars"></i>
+          <i class="navbar__button-cross uil uil-times"></i>
+        </div>
+      </div>
+    </section>
+    <!-- ******************************** -->
+    <!-- ---------INTRO SECTION---------- -->
+    <!-- ******************************** -->
+    <section class="section intro__section">
+      <div class="intro__container">
+        <div class="intro__text">
+          <div class="intro__text-wrapper">
+            <p class="intro__hello">
+              Hello! I am <span class="intro__name">Utsav</span>
+            </p>
+            <p class="intro__text-main">
+              I am a self taught web developer in Portugal looking for an entry
+              level job. My experience lies mainly on html, css, JavaScript,
+              node.js, mongoDB and React.
+            </p>
+            <div class="contact__button intro__text-button">
+              <a href="#contact-section" class="link button intro__button"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="intro__img">
+          <img
+            class="intro__img-profile"
+            src="/imgs/profile.png"
+            alt="Profile picture"
+          />
+          <div class="intro__circle intro__circle-1"></div>
+        </div>
+      </div>
+      <div class="intro__circle intro__circle-2"></div>
+      <div class="intro__circle intro__circle-3"></div>
+    </section>
+
+    <!-- ******************************** -->
+    <!-- ---------SLIDER SECTION---------- -->
+    <!-- ******************************** -->
+    <section class="section slider__section" id="slider-section">
+      <div class="section__header">
+        <div class="section__header-content">
+          <h1 class="section__heading">SKILLS</h1>
+          <p class="section__subheading">
+            Some tools and technologies I am familiar with
+          </p>
+        </div>
+      </div>
+      <div class="slider__container-wrapper">
+      <div class="slider__container">
+        <div class="slider__arrow-container slider__container-left">
+          <i class="slider__arrow uil uil-angle-left-b"></i>
+        </div>
+        <div class="slider__element slider__element-show slider__element-1">
+          <div class="logos logos__1">
+            <img class="logo__image" src="logos/html.png" alt="Html logo">
+            <img class="logo__image" src="logos/css.png" alt="CSS logo">
+            <img class="logo__image" src="logos/javascript.png" alt="Javascript logo">
+          </div>
+        </div>
+        <div class="slider__element slider__element-2">
+          <div class="logos logos__2">
+            <img class="logo__image" src="logos/react.png" alt="Nodejs logo">
+            <img class="logo__image" src="logos/nodejs.png" alt="React logo">
+          </div>
+        </div>
+        <div class="slider__element slider__element-3">
+          <div class="logos logos__3">         
+            <img class="logo__image" src="logos/mongodb.png" alt="MongoDB logo">
+          </div>
+        </div>
+        <div class="slider__element slider__element-4">
+          <div class="logos logos__4">
+            <img class="logo__image" src="logos/github.png" alt="Github logo">
+            <img class="logo__image" src="logos/vscode.png" alt="VSCode logo">
+          </div>
+        </div>
+        <div class ="slider__arrow-container slider__container-right">
+         <i class="slider__arrow  uil uil-angle-right-b"></i>
+      </div>
+      </div>
+      <div class="slider__dots-container">
+        <div class="slider__dot slider__dot-1 slider__dot-show"></div>
+        <div class="slider__dot slider__dot-1"></div>
+        <div class="slider__dot slider__dot-1"></div>
+        <div class="slider__dot slider__dot-1"></div>
+      </div>
+    </div>
+    </section>
+
+    <!-- ******************************** -->
+    <!-- ---------PROJECTS SECTION---------- -->
+    <!-- ******************************** -->
+    <section class="section project__section" id="project-section">
+      <div class="section__header">
+        <div class="section__header-content">
+          <h1 class="section__heading">PROJECTS</h1>
+          <p class="section__subheading">
+            You can have a look at some of my latest projects
+          </p>
+        </div>
+      </div>
+
+      <div class="project__container">
+        <!-- <div class="project project__one">
+          <div class="project__text">
+            <p class="project__name">Interesting Project</p>
+            <p class="project__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              nam illum nihil quisquam suscipit repellat commodi iure
+            </p>
+            <div class="project__links">
+              <a href="#" class="project__link gitHub__link">
+                code <i class="project__link-icon uil uil-github-alt"></i>
+              </a>
+              <a href="#" class="project__link page__link">
+                visit <i class="project__link-icon uil uil-eye"></i
+              ></a>
+            </div>
+            <span class="project__number">1</span>
+          </div>
+          <div class="project__picture">
+            <img
+              class="project__pic"
+              src="imgs/project1.png"
+              alt="Project picture"
+            />
+          </div>
+        </div> -->
+
+        <!-- <div class="project project__two">
+          <div class="project__picture">
+            <img
+              class="project__pic"
+              src="imgs/project2.png"
+              alt="Project picture"
+            />
+          </div>
+          <div class="project__text">
+            <p class="project__name">Wonderful Project</p>
+            <p class="project__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              nam illum nihil quisquam suscipit repellat commodi iure
+            </p>
+             <div class="project__links">
+              <a href="#" class="project__link gitHub__link">
+                code <i class="project__link-icon uil uil-github-alt"></i>
+              </a>
+              <a href="#" class="project__link page__link">
+                visit <i class="project__link-icon uil uil-eye"></i
+              ></a>
+            </div>
+            <span class="project__number">2</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ******************************** -->
+    <!-- ---------CONTACT SECTION---------- -->
+    <!-- ******************************** -->
+    <section class="section contact__section" id="contact-section">
+      <div class="contact__container">
+        <div class="contact__text">
+          <p class="contact__paragraph-first">
+            I would be glad to hear your feedback..
+          </p>
+          <p class="contact__paragraph-second">
+            Would you like me to work in your company?
+          </p>
+
+          <form class="contact__form">    
+          <div class="form__element-1">
+            <label class="label contact__name-label" for="full-name">Full Name</label><br>
+            <input class="input contact__name-input" id="full-name" type="text" placeholder="Full name"/>
+          </div>
+
+          <div class="form__element-2">
+            <label class="label contact__email-label" class="email" for="email">Email</label><br>
+            <input class="input contact__email-input" id="email" type="email" placeholder="Your email"/>
+          </div>
+
+          <div class="form__element-3">
+            <label class="label contact__message-label" for="message">Message</label><br>
+            <textarea class="contact__message-input" id="message" cols="40" rows="3" placeholder="Write something here..."></textarea>
+          </div>
+
+          <div class="form__element-4">
+            <input class="form__send" type="submit" value="Send"></input>
+          </div>
+          </form>
+          <div class="contacts">
+            <span class="contacts__contact"><i class="uil uil-phone"></i> 920409213</span>
+            <span class="contacts__contact"><i class="uil uil-envelope"></i> acharya.utsav.15@gmail.com</span>
+          </div>
+        </div>
+          <img
+            class="contact__img"
+            src="imgs/profile.png"
+            alt="Contact image"
+          />
+      </div>
+    </section>
+
+    <!-- ******************************** -->
+    <!-- ---------ABOUT SECTION---------- -->
+    <!-- ******************************** -->
+
+    <section class="section about__section" id="about-section">
+      <div class="section__header">
+        <div class="section__header-content">
+          <h1 class="section__heading">About me</h1>
+          <p class="section__subheading">
+            Only if you are interested in these boring questions
+          </p>
+        </div>
+      </div>
+
+      <div class="about__container-wrapper">
+      <div class="about__container">
+        <!-- about content 1 -->
+        <!-- <div class="about__content">
+          <div class="about__question">
+            <span class="about__number">4)</span>
+            <p class="about__question-paragraph">
+              How did you grew interest in programming?
+            </p>
+            <i class="about__icon uil uil-angle-down"></i>
+          </div>
+          <div class="about__answer">
+            <p class="about__answer-paragraph">
+              For me, two positive things happened in lockdown. One, covid
+              positive and another, interest in programming.
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    </section>
+
+    <!-- ******************************** -->
+    <!-- ---------FOOTER SECTION---------- -->
+    <!-- ******************************** -->
+    <section class="section footer__section" id="footer-section">
+      <div class="footer__container">
+        <div class="footer__text">
+          <p class="footer__text">Thank you very much for your time !!</p>
+          <a class="navbar__link navbar__link-cv" href="#" download
+            >C.V. <i class="navbar__link-cv-icon uil uil-download-alt"></i
+          ></a>
+          <hr class="footer__line" />
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="link nav__link" href="#slider-section">skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#project-section">projects</a>
+          </li>
+          <li class="navbar__item">
+            <a class="link nav__link" href="#contact-section">contact</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#about-section">about</a>
+          </li>
+        </ul>
+        <div class="footer__contacts">
+          <span class="footer__contact"
+            ><i class="footer__contact-icon uil uil-phone"></i> 920409213</span
+          >
+          <span class="footer__contact"
+            ><i class="footer__contact-icon uil uil-envelope"></i>
+            acharya.utsav.15@gmail.com</span
+          >
+        </div>
+        <div class="nav__social">
+          <a href="#" class="footer__link-icon"
+            ><i class="footer__icon uil uil-facebook-f"></i
+          ></a>
+          <a href="#" class="footer__link-icon"
+            ><i class="footer__icon uil uil-instagram-alt"></i
+          ></a>
+          <a href="#" class="footer__link-icon"
+            ><i class="footer__icon uil uil-github"></i
+          ></a>
+        </div>
+        <p class="footer__copyright">
+          Copyright &copy;
+          <span class="copyright__name">Utsav Acharya</span> <span class="copyright__date">2022</span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
