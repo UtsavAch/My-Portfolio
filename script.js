@@ -163,6 +163,26 @@ document.addEventListener("click", (e) => {
 ////////////////////////////////////////////////////////////
 ////////////////////NAVBAR SECTION///////////////////////////
 
+////////////////////////
+///////STICKY NAVBAR
+const header = document.querySelector(".header");
+const nav = document.querySelector(".navbar__container");
+const navHeight = nav.getBoundingClientRect().height;
+
+const headObserver = new IntersectionObserver(
+  function (entries) {
+    console.log(entries);
+    const [entry] = entries;
+    console.log(entry);
+    if (!entry.isIntersecting) {
+      nav.classList.add("navbar__sticky");
+    } else if (entry.isIntersecting) {
+      nav.classList.remove("navbar__sticky");
+    }
+  },
+  { rootMargin: `-${1}px` }
+);
+headObserver.observe(header);
 ////////////////////////////////////////////////////////////
 ////////////////////ABOUT SECTION///////////////////////////
 const aboutQuestions = document.querySelectorAll(".about__question");
