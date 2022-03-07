@@ -28,7 +28,7 @@ body {
   font-weight: 300;
   color: var(--text-dark);
   line-height: 1.9;
-  background-color: #f3f3f3;
+  background-color: #fff;
 }
 
 .section {
@@ -64,7 +64,7 @@ body {
 /* NAVBAR SECTION */
 /***********************************************/
 .navbar__section {
-  height: 8rem;
+  height: 7.9rem;
 }
 
 .navbar__container {
@@ -138,7 +138,7 @@ body {
 
 /* Sticky Navbar */
 .navbar__sticky {
-  background-color: #f3f3f3;
+  background-color: #fff;
   opacity: 0.95;
   position: fixed;
   width: 100%;
@@ -628,7 +628,7 @@ textarea {
   gap: 1.5rem;
   align-items: center;
   padding: 0 3rem;
-
+  color: var(--text-medium);
   width: 100%;
   font-size: 2rem;
   font-weight: 500;
