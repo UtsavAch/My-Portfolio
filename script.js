@@ -171,9 +171,7 @@ const navHeight = nav.getBoundingClientRect().height;
 
 const headObserver = new IntersectionObserver(
   function (entries) {
-    console.log(entries);
     const [entry] = entries;
-    console.log(entry);
     if (!entry.isIntersecting) {
       nav.classList.add("navbar__sticky");
     } else if (entry.isIntersecting) {
@@ -183,6 +181,43 @@ const headObserver = new IntersectionObserver(
   { rootMargin: `-${1}px` }
 );
 headObserver.observe(header);
+
+////////////////////////////////////////////////////////////
+////////////////////SLIDER SECTION///////////////////////////
+
+const arrowLeft = document.querySelector(".slider__container-left");
+const arrowRight = document.querySelector(".slider__container-right");
+const sliderContainerWrapper = document.querySelector(
+  ".slider__container-wrapper"
+);
+
+let slideNumber = 1;
+sliderContainerWrapper.addEventListener("click", (e) => {
+  const sliderButton = e.target.closest(".slider__arrow-container");
+  const sliderDot = e.target.closest(".slider__dot");
+  //Current Slide
+  const currentSlide = document.querySelector(
+    `.slider__element-${slideNumber}`
+  );
+  const currentDot = document.querySelector(`.slider__dot-${slideNumber}`);
+  currentSlide.classList.remove("slider__element-show");
+  currentDot.classList.remove("slider__dot-show");
+  //Change Slide Number
+  if (sliderButton === arrowLeft) {
+    slideNumber > 1 ? slideNumber-- : (slideNumber = 4);
+  } else if (sliderButton === arrowRight) {
+    slideNumber < 4 ? slideNumber++ : (slideNumber = 1);
+  } else if (sliderDot) {
+    const slideDotClass = sliderDot.classList[1];
+    slideNumber = Number(slideDotClass[slideDotClass.length - 1]);
+  }
+  //Next Slide
+  const nextSlide = document.querySelector(`.slider__element-${slideNumber}`);
+  const nextDot = document.querySelector(`.slider__dot-${slideNumber}`);
+  nextSlide.classList.add("slider__element-show");
+  nextDot.classList.add("slider__dot-show");
+});
+
 ////////////////////////////////////////////////////////////
 ////////////////////ABOUT SECTION///////////////////////////
 const aboutQuestions = document.querySelectorAll(".about__question");
@@ -205,17 +240,4 @@ aboutQuestions.forEach((el) => {
       containShow = false;
     }
   });
-});
-
-////////////////////////////////////////////////////////////
-////////////////////SLIDER SECTION///////////////////////////
-const arrowLeft = document.querySelector(".slider__container-left");
-const arrowRight = document.querySelector(".slider__container-right");
-
-arrowLeft.addEventListener("click", () => {
-  console.log("clicked1");
-});
-
-arrowRight.addEventListener("click", () => {
-  console.log("clicked2");
 });
